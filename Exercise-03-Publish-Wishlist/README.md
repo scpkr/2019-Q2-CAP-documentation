@@ -324,25 +324,24 @@ We will now make use of the third layer in CDS and create a SAPUI5 application i
 
 1. Click _Save_.
 
-1. Open the file `xs-security.json` and edit the `xsappname` parameter to `furnitureshop_XXX`, where `XXX` is your student number. Click _Save_.
 
-1. Download the [img.zip](https://github.com/sandeep-tds/cloud-cf-furnitureshop-documentation/raw/master/Exercise-03-Publish-Wishlist/img.zip) file and save it locally.
+2. Download the [img.zip](https://github.com/sandeep-tds/cloud-cf-furnitureshop-documentation/raw/master/Exercise-03-Publish-Wishlist/img.zip) file and save it locally.
 
     Please remember where you have saved this file, as you will need to upload it into Web IDE in the next step.
 
-1. Expand the `ui/webapp` folder, then right-click on the `webapp` folder and select _Import -> File or Project_.
+3. Expand the `ui/webapp` folder, then right-click on the `webapp` folder and select _Import -> File or Project_.
 
     Choose the `img.zip` file that you have just downloaded.
 
     ![import](images/Exercise1_25_import_img.png)
 
-1. Click _OK_.  You can ignore any warnings about over writing an existing folder.
+4. Click _OK_.  You can ignore any warnings about over writing an existing folder.
 
     You will see that lots of image files have now been imported into the `webapp/img` folder.
 
-1. Open the `Master.view.xml` under `webapp/view` folder.
+5. Open the `Master.view.xml` under `webapp/view` folder.
 
-1. On or near line 62, you will find the `<ObjectListItem>` object.  Edit it to include the code as shown:
+6. On or near line 62, you will find the `<ObjectListItem>` object.  Edit it to include the code as shown:
 
     ```xml
     <ObjectListItem
@@ -362,9 +361,9 @@ We will now make use of the third layer in CDS and create a SAPUI5 application i
 
     This will add both the image icon and currency formatting to the master view.
 
-1. Open the `Detail.view.xml` under `webapp/view` folder.
+7. Open the `Detail.view.xml` under `webapp/view` folder.
 
-1. On or near line 16, you will find an `<ObjectHeader>` object.  Edit it be as shown below.
+8. On or near line 16, you will find an `<ObjectHeader>` object.  Edit it be as shown below.
 
     ```xml
     <ObjectHeader
@@ -379,7 +378,7 @@ We will now make use of the third layer in CDS and create a SAPUI5 application i
 
     As in the Master View. this will add not only the image and currency formatting to the detail view, but also the product name.
 
-1. On or near line 24, you will find the `<IconTabBar>` object.  Edit it to be as shown below:
+9. On or near line 24, you will find the `<IconTabBar>` object.  Edit it to be as shown below:
 
     ```xml
     <IconTabBar
@@ -424,7 +423,7 @@ We will now make use of the third layer in CDS and create a SAPUI5 application i
 
     This will add 2 items to the icon tab bar, one for product details with the labels and details for the selected product and a second toolbar icon to view the full size product image.
 
-1. Finally add the following includes to the `Detail.view.xml`.
+10. Finally add the following includes to the `Detail.view.xml`.
 
     ```xml
     xmlns:l="sap.ui.layout"
@@ -436,13 +435,13 @@ We will now make use of the third layer in CDS and create a SAPUI5 application i
 
     ![detail view](images/Exercise1_26_detail_view.jpg)
 
-1. Save all your changes, then right-click on the `ui` module and select _Run -> Run as Web Application_.
+11. Save all your changes, then right-click on the `ui` module and select _Run -> Run as Web Application_.
 
     ![run as](images/Exercise1_27_run_as.jpg)
 
-1. In the `Choose File to Run` pop-up, scroll the list down and select `index.html` and press OK.
+12. In the `Choose File to Run` pop-up, scroll the list down and select `index.html` and press OK.
 
-1. Enter your SAP Cloud Platform user ID (e-mail) and password and press "Create".
+13. Enter your SAP Cloud Platform user ID (e-mail) and password and press "Create".
 
     This is required by the design time to run the web application (this userid is the same student userid and password you have used to login to the Cloud Platform Cockpit and WebIDE)
 
@@ -450,7 +449,7 @@ We will now make use of the third layer in CDS and create a SAPUI5 application i
 
     If you see an error message about a pop-up blocker, then select the pop-up blocker icon at the far right of the browser's address line and select "Allow all pop-ups and redirects from ...".  You will now need rerun the Web Application.
 
-1. After a few seconds, you should now see the application running.
+14. After a few seconds, you should now see the application running.
 
     ![end result](images/Exercise1_29_running.jpg)
 

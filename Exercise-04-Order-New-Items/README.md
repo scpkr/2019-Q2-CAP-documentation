@@ -10,18 +10,18 @@
 
 
 ## Table of Contents
-- [Exercise 4 - Order New Items](#exercise-4---order-new-items)
-  - [Navigation](#navigation)
-  - [Table of Contents](#table-of-contents)
-- [Overview](#overview)
-- [1. Setting up On-Prem Data](#1-setting-up-on-prem-data)
-- [2. Test access to the On-Prem Data](#2-test-access-to-the-on-prem-data)
-- [3. Enhance the Service for the Wishlist Application](#3-enhance-the-service-for-the-wishlist-application)
-- [4. Extend the User Interface to Display On-Premise Product Data](#4-extend-the-user-interface-to-display-on-premise-product-data)
-- [5. Build and Deploy Application to SAP Cloud Platform](#5-build-and-deploy-application-to-sap-cloud-platform)
-- [6. Create Destination Configuration on SAP Cloud Platform](#6-create-destination-configuration-on-sap-cloud-platform)
-- [7. Test the Application](#7-test-the-application)
-  - [Navigation](#navigation-1)
+- [Exercise 4 - Order New Items](#Exercise-4---Order-New-Items)
+  - [Navigation](#Navigation)
+  - [Table of Contents](#Table-of-Contents)
+- [Overview](#Overview)
+- [1. Setting up On-Prem Data](#1-Setting-up-On-Prem-Data)
+- [2. Create destination for On-Prem data](#2-Create-destination-for-On-Prem-data)
+- [3. Enhance the Service for the Wishlist Application](#3-Enhance-the-Service-for-the-Wishlist-Application)
+- [4. Extend the User Interface to Display On-Premise Product Data](#4-Extend-the-User-Interface-to-Display-On-Premise-Product-Data)
+- [5. Build and Deploy Application to SAP Cloud Platform](#5-Build-and-Deploy-Application-to-SAP-Cloud-Platform)
+- [6. Create Destination Configuration on SAP Cloud Platform](#6-Create-Destination-Configuration-on-SAP-Cloud-Platform)
+- [7. Test the Application](#7-Test-the-Application)
+  - [Navigation](#Navigation-1)
 
 
 <a name="Intro"></a>
@@ -51,23 +51,9 @@ However, if you wish to setup your own On-prem system running on your machine, y
 [Top](#top)
 
 <a name="Step2"></a>
-# 2. Test access to the On-Prem Data
+# 2. Create destination for On-Prem data
 
-1. To test if the On-Prem system is up and running, please launch the following URL:
-   ```url
-   https://teched2018-opp363-opp363-space-245-srv.cfapps.eu10.hana.ondemand.com/odata/v2/CatalogService/BackEndProductData
-   ```
-
-   If the on-premise system is running (on the presenter's system), you should see the data from on-prem.
-
-   ![backend odata](images/Exercise2_0_onprem_data_success.png)
-
-   If you see the following image, please ask the presenter to start the On-Premise system.
-
-   ![backend odata](images/Exercise2_0_onprem_data_fail.png)
-
-
-2. In your SAP Cloud Platform Cockpit, go to TechEd2018 &rarr; OPP363CF &rarr; Connectivity &rarr; Destinations
+1. In your SAP Cloud Platform Cockpit,go to the Destination tab under Connectivity and create the following destination with the name "ONPREM_BACKEND" and ProxyType "OnPremise".
 
 ![backend odata](images/Exercise2_0_onprem_dest.png)
 
