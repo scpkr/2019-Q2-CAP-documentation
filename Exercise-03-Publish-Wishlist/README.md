@@ -205,9 +205,7 @@ We will create a new business application using Web IDE. We will define a CDS da
     ![Project Name](images/Exercise1_11_build_db1.jpg)
 
 
-(Skip 27 ~ 32 : Known issue)
-
-27. Now that our database has been deployed to HANA (built) and loaded with data, we can now look at this information.
+8.  Now that our database has been deployed to HANA (built) and loaded with data, we can now look at this information.
 
     Right Click on the `db` module and select _Open HDI Container_.
 
